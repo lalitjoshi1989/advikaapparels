@@ -44,6 +44,14 @@
     ::-webkit-scrollbar {
       display: none;
     }
+
+    .contact-office .text-label-md {
+      font-size: 14px;
+    }
+
+    .contact-office .text-body-md {
+      font-size: 17px;
+    }
   </style>
   <script src="https://cdn.tailwindcss.com"></script>
   <script
@@ -55,10 +63,12 @@
   <header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.03)]">
     <div class="h-20 w-full px-margin lg:px-margin-desktop flex items-center justify-between gap-gutter">
       <div class="flex items-center gap-space-sm">
-        <div class="flex items-center gap-space-xs"><span
-            class="font-headline-sm text-headline-sm tracking-tight text-primary uppercase">Advika</span><span
-            class="hidden sm:inline-block font-label-md text-caption uppercase text-on-surface-variant tracking-widest pl-space-xs">Apparel
-            &amp; Accessories</span></div>
+        <div class="flex flex-col items-start gap-1">
+          <span class="font-headline-sm text-headline-sm tracking-tight text-primary uppercase">ADVIKA</span>
+          <span
+            class="hidden sm:inline-block font-label-md text-caption uppercase text-on-surface-variant tracking-widest">Apparel
+            &amp; Accessories</span>
+        </div>
       </div>
       <nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary border-b border-primary">
         <a class="font-label-lg text-label-lg uppercase text-on-surface-variant hover:text-primary transition-colors py-1"
@@ -68,9 +78,10 @@
           class="font-label-lg text-label-lg uppercase text-on-surface-variant hover:text-primary transition-colors py-1"
           data-path="collections" href="collections.html">Collections</a><a
           class="font-label-lg text-label-lg uppercase text-on-surface-variant hover:text-primary transition-colors py-1"
-          data-path="manufacturing" href="manufacturing.html">Manufacturing</a><a
-          class="font-label-lg text-label-lg uppercase text-on-surface-variant hover:text-primary transition-colors py-1"
-          data-path="contact" href="contact.html">Contact</a></nav>
+          data-path="manufacturing" href="manufacturing.html">Manufacturing</a><a aria-current="page"
+          class="font-label-lg text-label-lg uppercase transition-colors py-1 text-primary border-b border-primary"
+          data-path="contact" href="contact.html">Contact</a>
+      </nav>
       <div class="flex items-center gap-space-md">
         <div class="hidden xl:flex flex-col text-right"><span
             class="font-caption text-caption uppercase text-secondary tracking-widest">Export Markets</span><span
@@ -103,7 +114,7 @@
       <!-- Hero Section -->
       <section class="w-full py-space-xl lg:py-space-2xl bg-surface">
         <div class="w-full px-margin lg:px-margin-desktop">
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+          <div class="relative grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-stretch">
             <!-- Hero Text Column -->
             <div class="lg:col-span-7 flex flex-col space-y-space-md">
               <div class="flex items-center gap-space-xs">
@@ -142,28 +153,19 @@
               </div>
             </div>
             <!-- Hero Editorial Imagery -->
-            <div class="lg:col-span-5 relative mt-space-md lg:mt-0">
-              <div class="relative bg-surface-container-high p-space-sm sm:p-space-md">
-                <div class="aspect-[4/5] w-full overflow-hidden bg-surface-container">
+            <div class="lg:col-span-5 relative mt-space-md lg:mt-0 lg:flex lg:flex-col">
+              <div class="relative bg-surface-container-high p-space-sm sm:p-space-md lg:flex lg:h-full lg:flex-col">
+                <div class="aspect-[4/5] w-full overflow-hidden bg-surface-container lg:aspect-auto lg:min-h-0 lg:flex-1">
                   <img
                     class="w-full h-full object-cover object-center filter grayscale-[15%] hover:scale-[1.02] transition-transform duration-700 ease-out"
                     data-alt="Editorial tactile close-up photograph of artisan hands finishing a luxurious hand-fringed patterned silk-wool scarf atop warm travertine stone in natural morning studio light, soft neutral beige, ivory, and slate tones"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1_32EjzHy7h2WNyDkDf1r2V7XjaPBgBUWdCnPN1VdzWN1Cdik1_x4p3ieHA8ynbabLoByGn6PTFYlkafxzrkH_Xa8rwQS4x3W9HRhL0e86VavhSbHR7PiZkxGlt22j03hplOkvHKBMcNHvfOEWdAA_0JjNk3L1GXTRsLI49qErL_wVBuUklhK842wQNTrMFxYa9ZhUbRCOF0ZY3TIWCekVElm_lgjFjHi6vEhxjGukMePiSbaznCK" />
+                    src="images\contactus_images\contactpage_image_above.jpg" />
                 </div>
                 <div
                   class="pt-space-sm flex items-center justify-between text-on-surface-variant font-caption text-caption uppercase tracking-widest">
                   <span>Specimen: Hand-Fringed Botanical Twill</span>
                   <span>Plate No. 04 / Advika Archives</span>
                 </div>
-              </div>
-              <!-- Tactile secondary label card floating offset -->
-              <div
-                class="hidden sm:block absolute -bottom-6 -left-8 bg-surface-container-lowest p-space-md max-w-xs shadow-sm">
-                <span class="font-label-md text-caption uppercase tracking-widest text-secondary block mb-1">Direct
-                  Provenance</span>
-                <p class="font-body-md text-caption text-on-surface leading-normal">
-                  Every sample swatch originates directly from our Noida atelier looms and print tables.
-                </p>
               </div>
             </div>
           </div>
@@ -186,7 +188,7 @@
                     Liaison</span>
                   <h2 class="font-headline-md text-headline-md text-primary">Bespoke Collaboration &amp; Partnerships
                   </h2>
-                  <p class="font-body-md text-body-md text-on-surface-variant mt-space-xs leading-relaxed">
+                  <p class="text-[17px] leading-7 text-on-surface-variant mb-space-md font-light">
                     We act as a direct manufacturing partner for luxury houses, emerging apparel labels, and interior
                     architects. You consult directly with textile masters and technical pattern-makers.
                   </p>
@@ -196,11 +198,11 @@
                   <div
                     class="p-space-md bg-surface-container-low transition-colors duration-300 hover:bg-surface-container">
                     <div class="flex items-baseline gap-space-xs mb-1">
-                      <span class="font-label-md text-caption uppercase tracking-widest text-primary">01</span>
-                      <h3 class="font-label-lg text-label-lg uppercase tracking-wider text-primary">Custom &amp;
+                      <span class="text-[14px] md:text-[16px] font-medium uppercase tracking-wider text-primary">01</span>
+                      <h3 class="text-[14px] md:text-[16px] font-medium uppercase tracking-wider text-primary">Custom &amp;
                         Private-Label Manufacturing</h3>
                     </div>
-                    <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    <p class="text-[17px] leading-7 text-on-surface-variant mb-space-md font-light">
                       Collaborative development for established fashion houses, independent designers, and boutique
                       labels. We oversee full-cycle development from raw yarn procurement to finished garment tags.
                     </p>
@@ -208,11 +210,11 @@
                   <div
                     class="p-space-md bg-surface-container-low transition-colors duration-300 hover:bg-surface-container">
                     <div class="flex items-baseline gap-space-xs mb-1">
-                      <span class="font-label-md text-caption uppercase tracking-widest text-primary">02</span>
-                      <h3 class="font-label-lg text-label-lg uppercase tracking-wider text-primary">Accessible Minimum
+                      <span class="text-[14px] md:text-[16px] font-medium uppercase tracking-wider text-primary">02</span>
+                      <h3 class="text-[14px] md:text-[16px] font-medium uppercase tracking-wider text-primary">Accessible Minimum
                         Order Quantity</h3>
                     </div>
-                    <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    <p class="text-[17px] leading-7 text-on-surface-variant mb-space-md font-light">
                       Carefully scaled capsule runs starting at only 50 pieces per design per colourway, enabling
                       responsible production and limited collection drops without warehouse overstock.
                     </p>
@@ -220,11 +222,11 @@
                   <div
                     class="p-space-md bg-surface-container-low transition-colors duration-300 hover:bg-surface-container">
                     <div class="flex items-baseline gap-space-xs mb-1">
-                      <span class="font-label-md text-caption uppercase tracking-widest text-primary">03</span>
-                      <h3 class="font-label-lg text-label-lg uppercase tracking-wider text-primary">In-House Digital
+                      <span class="text-[14px] md:text-[16px] font-medium uppercase tracking-wider text-primary">03</span>
+                      <h3 class="text-[14px] md:text-[16px] font-medium uppercase tracking-wider text-primary">In-House Digital
                         &amp; Screen Printing</h3>
                     </div>
-                    <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    <p class="text-[17px] leading-7 text-on-surface-variant mb-space-md font-light">
                       Precision pigment, acid, reactive, and discharge printing executed on location. Crisp line-art,
                       intricate historical patterns, and photorealistic gradients matched to Pantone TCX standards.
                     </p>
@@ -232,78 +234,35 @@
                   <div
                     class="p-space-md bg-surface-container-low transition-colors duration-300 hover:bg-surface-container">
                     <div class="flex items-baseline gap-space-xs mb-1">
-                      <span class="font-label-md text-caption uppercase tracking-widest text-primary">04</span>
-                      <h3 class="font-label-lg text-label-lg uppercase tracking-wider text-primary">Worldwide B2B
+                      <span class="text-[14px] md:text-[16px] font-medium uppercase tracking-wider text-primary">04</span>
+                      <h3 class="text-[14px] md:text-[16px] font-medium uppercase tracking-wider text-primary">Worldwide B2B
                         Inquiries Welcome</h3>
                     </div>
-                    <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    <p class="text-[17px] leading-7 text-on-surface-variant mb-space-md font-light">
                       Door-to-door air freight and sea consignment delivery for clients across the United Kingdom,
                       European Union, North America, and the United Arab Emirates with full export documentation.
                     </p>
                   </div>
                 </div>
-                <!-- Atelier Liaison Placeholders Block -->
-                <div class="p-space-md bg-surface-container-high space-y-space-sm">
-                  <span class="font-label-md text-caption uppercase tracking-widest text-secondary block">Atelier
-                    Coordinates &amp; Direct Desks</span>
-                  <div class="space-y-space-xs text-body-md font-body-md">
-                    <div>
-                      <span class="font-label-md text-caption uppercase text-primary tracking-wider block">Registered
-                        Atelier &amp; Office</span>
-                      <p class="text-on-surface-variant">[Atelier Address Line 1, Sector 63, Phase III, National Capital
-                        Region, India — Add full address details upon final onboarding]</p>
-                    </div>
-                    <div class="pt-2">
-                      <span class="font-label-md text-caption uppercase text-primary tracking-wider block">Direct
-                        Inquiries Email</span>
-                      <p class="text-on-surface-variant">[inquiries@advikaofficial.com / Add dedicated client director
-                        email]</p>
-                    </div>
-                    <div class="pt-2">
-                      <span class="font-label-md text-caption uppercase text-primary tracking-wider block">International
-                        Liaison &amp; Instant Desk</span>
-                      <p class="text-on-surface-variant">[+91 (0) 000 000 0000 / Dedicated WhatsApp Business available
-                        upon request]</p>
-                    </div>
-                    <div class="pt-2">
-                      <span class="font-label-md text-caption uppercase text-primary tracking-wider block">Studio
-                        Operating Hours</span>
-                      <p class="text-on-surface-variant">[Monday – Friday, 09:30 – 18:30 IST / Responses typically
-                        shared within 24 business hours]</p>
-                    </div>
-                  </div>
-                  <div
-                    class="pt-space-xs mt-space-xs bg-surface-container-highest p-space-xs text-on-surface-variant font-caption text-caption">
-                    <div class="flex items-center gap-2">
-                      <span class="material-symbols-outlined text-base text-primary">lock</span>
-                      <span>Direct manufacturer consultations. Mutual non-disclosure (NDA) protection guaranteed for all
-                        proprietary designs and vector files.</span>
-                    </div>
-                  </div>
-                </div>
               </div>
-              <!-- Secondary Atelier Visual Accent -->
-              <div class="relative bg-surface-container p-space-xs">
-                <div class="aspect-[16/9] w-full overflow-hidden bg-surface-container-low">
-                  <img class="w-full h-full object-cover object-center filter grayscale-[10%]"
-                    data-alt="Calm bright textile workshop interior with natural wood tables, rolled linen bolts, paint swatches, scissors, and artisans quietly assessing cloth by sunlit atelier windows"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIPeuUB9tKi9QhPF3qLdHktSHjGWfwt2NvL0hJrFCre0brE27tBC78ami7sd4MuYK77TRyeil-gXlimLdCItoffMrHzm1JFQumHBDUuheZw2okDmDTErcETM0VzDEuJ84W0aKCCSwC3wpE1Nh5iF9HB1a8p-xJiiAMwgtZQurhHZQZqgL185Mw2R2BICTbsd_PwwOtm5RmrhSZjcpN68mikfZiHn-i48ylt-qYmDv2jdE11o2bADor" />
-                </div>
-                <div
-                  class="p-space-xs flex justify-between items-center text-secondary font-caption text-caption uppercase">
-                  <span>Atelier Weaving &amp; Color Match Bench</span>
-                  <span>New Delhi NCR</span>
-                </div>
+              <div class="contact-office mt-space-lg space-y-space-xs pt-space-md">
+                <p class="font-label-md text-label-md uppercase text-primary tracking-widest">Atelier &amp; Corporate
+                  Office
+                </p>
+                <p class="font-body-md text-body-md text-secondary">Sector 63, Phase III, Noida / New Delhi NCR, India
+                </p>
+                <p class="font-body-md text-body-md text-secondary">inquiries@advikaofficial.com · +91 (120) 489-0200
+                </p>
               </div>
             </div>
             <!-- Right Column: Clean, Professional B2B Inquiry Form -->
             <div class="lg:col-span-7">
               <div class="bg-surface-container-lowest p-space-md sm:p-space-lg lg:p-space-xl">
                 <div class="mb-space-lg">
-                  <span class="font-label-md text-caption uppercase tracking-widest text-secondary block mb-1">Direct
+                  <span class="text-[14px] md:text-[16px] font-medium uppercase tracking-wider text-secondary block mb-1">Direct
                     Specification Form</span>
                   <h2 class="font-headline-md text-headline-md text-primary">Submit Technical or Collection Brief</h2>
-                  <p class="font-body-md text-body-md text-on-surface-variant mt-2 leading-relaxed">
+                  <p class="text-[14px] md:text-[16px] font-medium uppercase tracking-wider text-primary">
                     Provide preliminary details regarding your planned silhouettes, volume, or target composition. Our
                     textile engineers will respond with relevant technical spec sheets and fabric swatch swatches.
                   </p>
@@ -314,42 +273,45 @@
                   <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
                     <!-- Full Name -->
                     <div class="space-y-1">
-                      <label class="block font-label-md text-caption uppercase tracking-wider text-primary"
+                      <label class="text-[14px] md:text-[16px] font-medium uppercase tracking-wider text-primary"
                         for="fullName">
                         Full Name <span class="text-error">*</span>
                       </label>
                       <input
                         class="w-full bg-surface-container-low px-space-sm py-3 text-on-surface font-body-md text-body-md placeholder:text-outline-variant focus:outline-none focus:bg-surface-container transition-colors duration-200"
-                        id="fullName" name="name" data-fs-field placeholder="e.g. Helena Vance" required="" type="text" />
+                        id="fullName" name="name" data-fs-field placeholder="e.g. Helena Vance" required=""
+                        type="text" />
                       <span data-fs-error="name" aria-live="polite"></span>
                     </div>
                     <!-- Business / Brand Name -->
                     <div class="space-y-1">
-                      <label class="block font-label-md text-caption uppercase tracking-wider text-primary"
+                      <label class="text-[14px] md:text-[16px] font-medium uppercase tracking-wider text-primary"
                         for="brandName">
                         Business / Brand Name
                       </label>
                       <input
                         class="w-full bg-surface-container-low px-space-sm py-3 text-on-surface font-body-md text-body-md placeholder:text-outline-variant focus:outline-none focus:bg-surface-container transition-colors duration-200"
-                        id="brandName" name="business" data-fs-field placeholder="e.g. Vance Studios London" type="text" />
+                        id="brandName" name="business" data-fs-field placeholder="e.g. Vance Studios London"
+                        type="text" />
                       <span data-fs-error="business" aria-live="polite"></span>
                     </div>
                   </div>
                   <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
                     <!-- Work Email -->
                     <div class="space-y-1">
-                      <label class="block font-label-md text-caption uppercase tracking-wider text-primary"
+                      <label class="text-[14px] md:text-[16px] font-medium uppercase tracking-wider text-primary"
                         for="workEmail">
                         Work Email <span class="text-error">*</span>
                       </label>
                       <input
                         class="w-full bg-surface-container-low px-space-sm py-3 text-on-surface font-body-md text-body-md placeholder:text-outline-variant focus:outline-none focus:bg-surface-container transition-colors duration-200"
-                        id="workEmail" name="email" data-fs-field placeholder="name@brand.com" required="" type="email" />
+                        id="workEmail" name="email" data-fs-field placeholder="name@brand.com" required=""
+                        type="email" />
                       <span data-fs-error="email" aria-live="polite"></span>
                     </div>
                     <!-- Country -->
                     <div class="space-y-1">
-                      <label class="block font-label-md text-caption uppercase tracking-wider text-primary"
+                      <label class="text-[14px] md:text-[16px] font-medium uppercase tracking-wider text-primary"
                         for="country">
                         Country <span class="text-error">*</span>
                       </label>
@@ -363,7 +325,7 @@
                   <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
                     <!-- Product Interest Dropdown -->
                     <div class="space-y-1">
-                      <label class="block font-label-md text-caption uppercase tracking-wider text-primary"
+                      <label class="text-[14px] md:text-[16px] font-medium uppercase tracking-wider text-primary"
                         for="productCategory">
                         Product Interest
                       </label>
@@ -388,7 +350,7 @@
                     </div>
                     <!-- Estimated Order Quantity -->
                     <div class="space-y-1">
-                      <label class="block font-label-md text-caption uppercase tracking-wider text-primary"
+                      <label class="text-[14px] md:text-[16px] font-medium uppercase tracking-wider text-primary"
                         for="orderQuantity">
                         Estimated Order Quantity <span class="text-secondary">(Optional)</span>
                       </label>
@@ -412,7 +374,7 @@
                   </div>
                   <!-- Message / Requirements -->
                   <div class="space-y-1">
-                    <label class="block font-label-md text-caption uppercase tracking-wider text-primary"
+                    <label class="text-[14px] md:text-[16px] font-medium uppercase tracking-wider text-primary"
                       for="messageRequirements">
                       Message / Requirements <span class="text-error">*</span>
                     </label>
@@ -427,7 +389,7 @@
                   <div class="flex items-start gap-3 py-1">
                     <input class="mt-1 h-4 w-4 rounded-none bg-surface-container-low accent-primary cursor-pointer"
                       id="cadFileShare" name="design_file_share" value="yes" type="checkbox" />
-                    <label class="font-body-md text-caption text-on-surface-variant cursor-pointer leading-relaxed"
+                    <label class="text-[9px] md:text-[11px] font-medium uppercase tracking-wider text-primary"
                       for="cadFileShare">
                       I have a design or reference file to share (CAD, vector patterns, tech pack, or moodboard). <span
                         class="text-secondary block">Our team will issue an encrypted upload repository link within our
@@ -445,9 +407,8 @@
                   </div>
                   <!-- Disclaimer Text -->
                   <div class="pt-space-xs">
-                    <p class="font-body-md text-caption text-secondary leading-relaxed">
-                      Note: Design consultation prototype. Official dispatch occurs upon backend liaison verification.
-                      Client confidentiality strictly maintained under trade protection standards.
+                    <p class="text-[11px] md:text-[13px] font-medium uppercase tracking-wider text-primary">
+                      Note: All inquiries are reviewed individually. Product specifications, pricing, sampling, and delivery timelines are confirmed based on your project requirements.
                     </p>
                   </div>
                 </form>
@@ -468,63 +429,6 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Editorial Secondary Scarf Specimen Banner -->
-      <section class="w-full bg-surface-container-low py-space-lg">
-        <div class="w-full px-margin lg:px-margin-desktop">
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter items-center">
-            <div class="md:col-span-1 space-y-1">
-              <span class="font-label-md text-caption uppercase tracking-widest text-secondary block">Atelier Craft
-                Standard</span>
-              <h4 class="font-headline-sm text-headline-sm text-primary">Uncompromising Finishes</h4>
-              <p class="font-body-md text-caption text-on-surface-variant">
-                From hand-rolled Italian hems to fine self-fringing, our edge treatments define international luxury
-                standards.
-              </p>
-            </div>
-            <div class="md:col-span-2 overflow-hidden bg-surface-container">
-              <div class="aspect-[21/9] w-full">
-                <img class="w-full h-full object-cover object-center filter grayscale-[5%]"
-                  data-alt="Editorial still life of draped block-printed and woven silk-wool scarves resting on a rustic limestone slab with warm earthy tones, rich blue, madder red, and raw unbleached ecru yarn fringe details"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAimXh2VJcUPlgmu_Y9-5N6zalc6kxQrKjqKUPmJmylO0RvmY70dcitPg7PVeBmMd099AY9ylhNLYoZOfbJyGluFmuA5bSWsCINedJM6KjEJF9v9cuvf2ASLEiHtyiMjcMv2f7BYNC6XH3FVB0o8Go1Z6TLh7xGgvS8g3MFDtXVUXSt5WdVLULMAZKnlQDn5s-O3ufyDwotaMNv6NOt2u5pR23qDtuaZWMBlknaGsOQz0HicjUYSmHE" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Final Call to Action Section -->
-      <section class="w-full py-space-2xl bg-surface">
-        <div class="w-full px-margin lg:px-margin-desktop">
-          <div class="max-w-4xl mx-auto text-center space-y-space-md">
-            <span class="font-label-md text-caption uppercase tracking-widest text-secondary block">Ready to
-              Begin?</span>
-            <h2 class="font-headline-lg text-headline-lg text-primary">
-              Have a Collection in Mind?
-            </h2>
-            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
-              Share your vision with us, and let’s discuss your requirements. We support you across sampling, sourcing
-              rare yarns, and scalable export delivery.
-            </p>
-            <!-- Refined Callout Links / Tags -->
-            <div class="pt-space-md flex flex-wrap items-center justify-center gap-space-md">
-              <a class="inline-flex items-center gap-2 bg-primary text-surface font-label-md text-label-md uppercase px-space-lg py-4 tracking-widest hover:bg-on-surface-variant transition-colors"
-                data-path="collections" href="collections.html">
-                <span>Explore Our Collections</span>
-                <span class="material-symbols-outlined text-sm">north_east</span>
-              </a>
-              <a class="inline-flex items-center gap-2 bg-surface-container text-primary font-label-md text-label-md uppercase px-space-lg py-4 tracking-widest hover:bg-surface-container-high transition-colors"
-                data-path="manufacturing" href="manufacturing.html">
-                <span>View Manufacturing Capabilities</span>
-                <span class="material-symbols-outlined text-sm">precision_manufacturing</span>
-              </a>
-            </div>
-            <div class="pt-space-lg text-center">
-              <span class="font-caption text-caption uppercase tracking-widest text-secondary block">
-                Direct Inquiries Desk · Sector 63 Noida NCR · Export Markets UK · EU · US · UAE
-              </span>
             </div>
           </div>
         </div>
@@ -555,12 +459,6 @@
               custom textile &amp; accessories manufacturer. Partnering with global fashion houses, luxury boutiques,
               and private label labels across the UK, Europe, USA, and UAE.</p>
           </div>
-          <div class="mt-space-lg space-y-space-xs pt-space-md">
-            <p class="font-label-md text-label-md uppercase text-primary tracking-widest">Atelier &amp; Corporate Office
-            </p>
-            <p class="font-body-md text-body-md text-secondary">Sector 63, Phase III, Noida / New Delhi NCR, India</p>
-            <p class="font-body-md text-body-md text-secondary">inquiries@advikaofficial.com · +91 (120) 489-0200</p>
-          </div>
         </div>
         <div class="lg:col-span-2 space-y-space-sm">
           <h3 class="font-label-md text-label-md uppercase text-primary tracking-widest pb-space-xs">Collections</h3>
@@ -585,9 +483,6 @@
         <div class="lg:col-span-2 space-y-space-sm">
           <h3 class="font-label-md text-label-md uppercase text-primary tracking-widest pb-space-xs">Manufacturing</h3>
           <ul class="space-y-space-xs">
-            <li
-              class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors cursor-pointer">
-              Yarn Spinning &amp; Weaving</li>
             <li
               class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors cursor-pointer">
               Private Label Tailoring</li>
@@ -625,7 +520,7 @@
         </div>
       </div>
       <div
-        class="mt-space-2xl pt-space-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-space-sm">
+        class="mt-space-lg pt-space-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-space-sm">
         <p class="font-caption text-caption uppercase text-secondary tracking-widest">© 2025 Advika Apparel &amp;
           Accessories Private Limited. All Rights Reserved.</p>
         <p class="font-caption text-caption uppercase text-secondary tracking-widest">Export Trade Only · Registered
@@ -633,6 +528,7 @@
       </div>
     </div>
   </footer>
+  <script src="footer-typography.js"></script>
 </body>
 
 </html>
